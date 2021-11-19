@@ -8,18 +8,22 @@
 
 ### 启用相机
 
+安装 `raspberrypi-bootloader-x` 
+
+```
+pacman -S raspberrypi-bootloader-x
+```
+
 将下面内容添加到 `/boot/config.txt` 中
 
 ```
 gpu_mem=128 
-start_file=start4x.elf 
-fixup_file=fixup4x.dat
+start_x=1
 ```
 
 将下面内容添加到 `/etc/modprobe.d/rpi-camera.conf` 中（启用 v4l2 驱动）
 
 ```
-bcm2835-v4l2
 options bcm2835-v4l2 max_video_width=3240 max_video_height=2464
 ```
 
