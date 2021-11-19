@@ -20,7 +20,7 @@
 
 ## 镜像目录
 
-- [raspberrypi-userland](docker/raspberrypi-userland/README.md)
+- [raspberrypi-userland](docker-images/raspberrypi-userland/README.md)
 
 ## 使用方法
 
